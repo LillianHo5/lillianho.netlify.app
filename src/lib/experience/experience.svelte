@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	import Saos from 'saos';
 
 	import Box from '$lib/components/box.svelte';
@@ -83,6 +84,16 @@
 			]
 		}
 	];
+
+	let isMobile = false;
+
+	onMount(() => {
+		const checkScreenWidth = () => {
+			isMobile = window.innerWidth <= 1000;
+		};
+
+		checkScreenWidth();
+	});
 </script>
 
 {#each experiences as exp}
@@ -104,7 +115,7 @@
 						description={item.description}
 						image={item.image}
 						imageAlt={item.imageAlt}
-						width={'40%'}
+						width={isMobile ? '80%' : '40%'}
 					/>
 				{/each}
 			</div>
