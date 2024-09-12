@@ -1,4 +1,6 @@
 <script>
+	import Saos from 'saos';
+
 	import Box from '$lib/experience/box.svelte';
 	import LinkedInLogo from '$lib/experience/images/linkedin.png';
 	import LibertyLogo from '$lib/experience/images/liberty_mutual.webp';
@@ -84,22 +86,29 @@
 </script>
 
 {#each experiences as exp}
-	<div id="experience">
-		<h2>{exp.category}</h2>
-		<div class="experience-container">
-			{#each exp.data as item}
-				<Box
-					position={item.position}
-					time={item.timeInPosition}
-					company={item.company}
-					skills={item.skills}
-					description={item.description}
-					image={item.image}
-					imageAlt={item.imageAlt}
-				/>
-			{/each}
+	<Saos
+		animation={'fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
+		top={250}
+		bottom={250}
+		once={true}
+	>
+		<div id="experience">
+			<h2>{exp.category}</h2>
+			<div class="experience-container">
+				{#each exp.data as item}
+					<Box
+						position={item.position}
+						time={item.timeInPosition}
+						company={item.company}
+						skills={item.skills}
+						description={item.description}
+						image={item.image}
+						imageAlt={item.imageAlt}
+					/>
+				{/each}
+			</div>
 		</div>
-	</div>
+	</Saos>
 {/each}
 
 <style>
