@@ -1,40 +1,106 @@
 <script>
 	import Box from '$lib/experience/box.svelte';
+
 	const experiences = [
 		{
-			position: 'Software Engineer Intern',
-			timeInPosition: 'June 2024 - September 2024',
-			company: 'LinkedIn',
-			description: 'Worked on storage infrastructure and developed erasure coding system.'
+			category: 'Work Experience',
+			data: [
+				{
+					position: 'Software Engineer Intern',
+					timeInPosition: 'June 2024 - September 2024',
+					company: 'LinkedIn',
+					skills: ['Java', 'Software Design', 'Distributed Systems', 'JUnit', 'Mockito', 'Docker'],
+					description:
+						'Developed erasure coding for LinkedIn’s storage, reducing overhead by 75% and authored a design document to guide implementation.'
+				},
+				{
+					position: 'Software Engineer Intern',
+					timeInPosition: 'June 2023 - September 2023',
+					company: 'Liberty Mutual Insurance',
+					skills: ['SQL', 'Python', 'React.js', 'TypeScript', 'DBVisualizer', 'AWS'],
+					description:
+						' Improved data integrity and user access by modifying reinsurance claims databases and optimizing UI readability with React.'
+				},
+				{
+					position: 'Software Engineer Intern',
+					timeInPosition: 'April 2023 - June 2023',
+					company: 'LockPod',
+					skills: ['React Native', 'TypeScript', 'Figma'],
+					description:
+						'Implemented and designed user interfaces for the LockPod app using TypeScript and Figma.'
+				},
+				{
+					position: 'Software Engineer Intern',
+					timeInPosition: 'April 2022 - October 2022',
+					company: 'Skinalytics',
+					skills: ['Java', 'Android Development'],
+					description:
+						'Resolved UI bugs in the Skinalytics Android app and refactored code into a modular architecture to enhance maintainability and user experience.'
+				}
+			]
 		},
 		{
-			position: 'Software Engineer Intern',
-			timeInPosition: 'January 2023 - May 2023',
-			company: 'Liberty Mutual Insurance',
-			description: 'Developed frontend components using React.js and optimized UI performance.'
+			category: 'Extracurricular Experience',
+			data: [
+				{
+					position: 'Software Developer',
+					timeInPosition: 'November 2022 - Present',
+					company: 'Triton Software Engineering',
+					skills: [
+						'HTML/CSS',
+						'Svelte',
+						'TypeScript',
+						'React Native',
+						'Next.js',
+						'Tailwind CSS',
+						'MongoDB'
+					],
+					description:
+						'Developed an interactive landing page and a mobile/web portal, improving user engagement and accessibility for FixNation and UCSD’s Division of Sports Medicine.'
+				},
+				{
+					position: 'Undergraduate Researcher',
+					timeInPosition: 'September 2022 - September 2023',
+					company: 'Triton Software Engineering',
+					skills: ['Kotlin', 'Android Development'],
+					description:
+						'Developed an Android app using the BirdNet TFLite Model in Kotlin to repurpose old smartphones as carbon-efficient sensors for classifying birds from recorded audio samples.'
+				}
+			]
 		}
 	];
 </script>
 
-<div class="experience">
-	<h2>Work Experience</h2>
-	<div class="experience-container">
-		{#each experiences as exp}
-			<Box
-				position={exp.position}
-				time={exp.timeInPosition}
-				company={exp.company}
-				description={exp.description}
-			/>
-		{/each}
+{#each experiences as exp}
+	<div id="experience">
+		<h2>{exp.category}</h2>
+		<div class="experience-container">
+			{#each exp.data as item}
+				<Box
+					position={item.position}
+					time={item.timeInPosition}
+					company={item.company}
+					skills={item.skills}
+					description={item.description}
+				/>
+			{/each}
+		</div>
 	</div>
-</div>
+{/each}
 
 <style>
-	.experience {
+	#experience {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		margin-top: 5rem;
+	}
+
+	.experience-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 </style>

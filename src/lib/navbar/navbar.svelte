@@ -6,6 +6,8 @@
 <div class="navbar">
 	<nav>
 		<a href="/">Home</a>
+		<a href="#about">About</a>
+		<a href="#experience">Experience</a>
 		<a
 			href="https://drive.google.com/file/d/1Oc2tLSkskX7b2g4yVCUOYE4DxeoSET-t/view?usp=sharing"
 			target="_blank">Resume</a
@@ -25,7 +27,6 @@
 
 	.navbar {
 		background-color: #609966;
-		width: 100%;
 		padding: 1rem;
 	}
 

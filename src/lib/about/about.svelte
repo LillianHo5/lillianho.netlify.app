@@ -2,7 +2,7 @@
 	import headshot from '$lib/about/images/cropped_headshot.jpg';
 </script>
 
-<div class="about">
+<div id="about">
 	<h1>Lillian Ho</h1>
 	<div class="about-contents">
 		<img class="img" src={headshot} alt="Lillian Ho Headshot" />
@@ -18,7 +18,7 @@
 </div>
 
 <style>
-	.about {
+	#about {
 		display: flex;
 		align-items: center;
 		justify-content: center;
