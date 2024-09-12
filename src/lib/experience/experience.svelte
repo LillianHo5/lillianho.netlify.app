@@ -108,7 +108,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		margin: 5em 0em;
+		padding: 2em;
 	}
 
 	.experience-container {
@@ -116,5 +116,9 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
+	}
+
+	h2 {
+		text-align: center;
 	}
 </style>

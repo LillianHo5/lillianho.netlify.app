@@ -64,10 +64,12 @@
 		img {
 			width: 40vw;
 			height: 40vw;
+			padding-right: 0em;
 		}
 
 		p {
-			font-size: 3vw;
+			font-size: 16px;
+			width: 20em;
 		}
 	}
 </style>

@@ -66,5 +66,13 @@
 		.box {
 			width: 80%;
 		}
+
+		h2 {
+			font-size: 20px;
+		}
+
+		p {
+			font-size: 16px;
+		}
 	}
 </style>

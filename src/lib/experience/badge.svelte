@@ -20,4 +20,10 @@
 		font-size: 16px;
 		color: #686d76;
 	}
+
+	@media only screen and (max-width: 1000px) {
+		p {
+			font-size: 12px;
+		}
+	}
 </style>
