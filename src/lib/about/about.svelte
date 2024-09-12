@@ -1,20 +1,35 @@
 <script>
+	import { onMount } from 'svelte';
 	import Saos from 'saos';
 	import headshot from '$lib/about/images/cropped_headshot.jpg';
+
+	let isMobile = false;
+
+	onMount(() => {
+		const checkScreenWidth = () => {
+			isMobile = window.innerWidth <= 1000;
+		};
+
+		checkScreenWidth();
+	});
 </script>
 
 <div id="about">
-	<Saos
-		animation={'fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
-		top={250}
-		bottom={250}
-		once={true}
-	>
+	{#if isMobile}
 		<h1>Lillian Ho</h1>
-	</Saos>
+	{:else}
+		<Saos
+			animation={'fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
+			top={250}
+			bottom={250}
+			once={true}
+		>
+			<h1>Lillian Ho</h1>
+		</Saos>
+	{/if}
 	<div class="about-contents">
 		<Saos
-			animation={'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
+			animation={isMobile ? '' : 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
 			top={250}
 			bottom={250}
 			once={true}

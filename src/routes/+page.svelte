@@ -1,7 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
-	import Saos from 'saos';
-
 	import Navbar from '$lib/navbar/navbar.svelte';
 	import About from '$lib/about/about.svelte';
 	import Experience from '$lib/experience/experience.svelte';
