@@ -61,4 +61,10 @@
 		height: 5em;
 		border-radius: 10px;
 	}
+
+	@media only screen and (max-width: 1000px) {
+		.box {
+			width: 80%;
+		}
+	}
 </style>

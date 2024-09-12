@@ -23,23 +23,51 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		padding: 0 20em;
 	}
 
 	.about-contents {
 		display: flex;
+		align-items: center;
+		justify-content: center;
 		flex-direction: row;
 	}
 
 	h1 {
-		font-size: 5em;
+		font-size: 5vw;
 	}
 
 	img {
 		object-fit: cover;
-		width: 500px;
-		height: 400px;
+		width: 23vw;
+		height: 23vw;
 		border-radius: 100%;
 		padding-right: 5em;
+	}
+
+	p {
+		width: 30em;
+	}
+
+	@media only screen and (max-width: 1000px) {
+		#about {
+			padding: 0em;
+		}
+
+		.about-contents {
+			flex-direction: column;
+		}
+
+		h1 {
+			font-size: 10vw;
+		}
+
+		img {
+			width: 40vw;
+			height: 40vw;
+		}
+
+		p {
+			font-size: 3vw;
+		}
 	}
 </style>
