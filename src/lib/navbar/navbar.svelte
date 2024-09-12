@@ -16,6 +16,7 @@
 		<a href="/"><p>Home</p></a>
 		<a href="#about"><p>About</p></a>
 		<a href="#experience"><p>Experience</p></a>
+		<a href="#education"><p>Education</p></a>
 		<a
 			href="https://drive.google.com/file/d/1Oc2tLSkskX7b2g4yVCUOYE4DxeoSET-t/view?usp=sharing"
 			target="_blank"><p>Resume</p></a
@@ -38,13 +39,14 @@
 			<li><a href="/"><p>Home</p></a></li>
 			<li><a href="#about"><p>About</p></a></li>
 			<li><a href="#experience"><p>Experience</p></a></li>
+			<li><a href="#education"><p>Education</p></a></li>
 			<li>
 				<a
 					href="https://drive.google.com/file/d/1Oc2tLSkskX7b2g4yVCUOYE4DxeoSET-t/view?usp=sharing"
 					target="_blank"><p>Resume</p></a
 				>
 			</li>
-			<li><a href="mailto:holillian8@gmail.com"><p>Mail</p></a></li>
+			<li><a href="mailto:holillian8@gmail.com"><p>Contact</p></a></li>
 			<li><a href="https://www.linkedin.com/in/lillianmho/" target="_blank"><p>LinkedIn</p></a></li>
 			<li><a href="https://github.com/lillianho5" target="_blank"><p>GitHub</p></a></li>
 		</ul>
