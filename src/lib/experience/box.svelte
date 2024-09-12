@@ -5,12 +5,21 @@
 	export let time;
 	export let skills;
 	export let description;
+	export let image;
+	export let imageAlt;
 </script>
 
 <div class="box">
-	<h2>{position}</h2>
-	<p><strong>{company}</strong></p>
-	<p>{time}</p>
+	<div class="gen-info">
+		<div>
+			<h2>{position}</h2>
+			<p><strong>{company}</strong></p>
+			<p>{time}</p>
+		</div>
+		{#if image && imageAlt}
+			<img src={image} alt={imageAlt} />
+		{/if}
+	</div>
 	<div class="skills-container">
 		{#each skills as skill}
 			<Badge description={skill} />
@@ -35,11 +44,20 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+	.gen-info {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 	h2 {
 		margin: 0;
 		font-size: 1.25rem;
 	}
 	p {
 		margin: 0.5rem 0;
+	}
+	img {
+		width: 5em;
+		height: 5em;
 	}
 </style>

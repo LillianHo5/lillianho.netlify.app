@@ -31,6 +31,10 @@
 		flex-direction: row;
 	}
 
+	h1 {
+		font-size: 5em;
+	}
+
 	img {
 		object-fit: cover;
 		width: 500px;

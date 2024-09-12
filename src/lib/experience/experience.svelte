@@ -1,5 +1,9 @@
 <script>
 	import Box from '$lib/experience/box.svelte';
+	import LinkedInLogo from '$lib/experience/images/LI.png';
+	import LibertyLogo from '$lib/experience/images/liberty_mutual.webp';
+	import LockPodLogo from '$lib/experience/images/lockpod.jpeg';
+	import TSELogo from '$lib/experience/images/tse.png';
 
 	const experiences = [
 		{
@@ -11,7 +15,9 @@
 					company: 'LinkedIn',
 					skills: ['Java', 'Software Design', 'Distributed Systems', 'JUnit', 'Mockito', 'Docker'],
 					description:
-						'Developed erasure coding for LinkedIn’s storage, reducing overhead by 75% and authored a design document to guide implementation.'
+						'Developed erasure coding for LinkedIn’s storage, reducing overhead by 75% and authored a design document to guide implementation.',
+					image: LinkedInLogo,
+					imageAlt: 'LinkedIn Logo'
 				},
 				{
 					position: 'Software Engineer Intern',
@@ -19,7 +25,9 @@
 					company: 'Liberty Mutual Insurance',
 					skills: ['SQL', 'Python', 'React.js', 'TypeScript', 'DBVisualizer', 'AWS'],
 					description:
-						' Improved data integrity and user access by modifying reinsurance claims databases and optimizing UI readability with React.'
+						' Improved data integrity and user access by modifying reinsurance claims databases and optimizing UI readability with React.',
+					image: LibertyLogo,
+					imageAlt: 'Liberty Mutual Insurance Logo'
 				},
 				{
 					position: 'Software Engineer Intern',
@@ -27,7 +35,9 @@
 					company: 'LockPod',
 					skills: ['React Native', 'TypeScript', 'Figma'],
 					description:
-						'Implemented and designed user interfaces for the LockPod app using TypeScript and Figma.'
+						'Implemented and designed user interfaces for the LockPod app using TypeScript and Figma.',
+					image: LockPodLogo,
+					imageAlt: 'Liberty Mutual Insurance Logo'
 				},
 				{
 					position: 'Software Engineer Intern',
@@ -56,7 +66,9 @@
 						'MongoDB'
 					],
 					description:
-						'Developed an interactive landing page and a mobile/web portal, improving user engagement and accessibility for FixNation and UCSD’s Division of Sports Medicine.'
+						'Developed an interactive landing page and a mobile/web portal, improving user engagement and accessibility for FixNation and UCSD’s Division of Sports Medicine.',
+					image: TSELogo,
+					imageAlt: 'Triton Software Engineering Logo'
 				},
 				{
 					position: 'Undergraduate Researcher',
@@ -82,6 +94,8 @@
 					company={item.company}
 					skills={item.skills}
 					description={item.description}
+					image={item.image}
+					imageAlt={item.imageAlt}
 				/>
 			{/each}
 		</div>

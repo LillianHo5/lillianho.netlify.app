@@ -1,6 +1,7 @@
 <script>
 	import LinkedIn from '$lib/components/linkedin.svelte';
 	import GitHub from '$lib/components/github.svelte';
+	import Mail from '$lib/components/mail.svelte';
 </script>
 
 <div class="navbar">
@@ -12,6 +13,7 @@
 			href="https://drive.google.com/file/d/1Oc2tLSkskX7b2g4yVCUOYE4DxeoSET-t/view?usp=sharing"
 			target="_blank">Resume</a
 		>
+		<a href="mailto:holillian8@gmail.com"><Mail fill="#EDF1D6" /></a>
 		<a href="https://www.linkedin.com/in/lillianmho/" target="_blank"><LinkedIn fill="#EDF1D6" /></a
 		>
 		<a href="https://github.com/lillianho5" target="_blank"><GitHub fill="#EDF1D6" /></a>
