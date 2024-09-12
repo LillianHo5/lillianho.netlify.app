@@ -2,6 +2,7 @@
 	import Navbar from '$lib/navbar/navbar.svelte';
 	import About from '$lib/about/about.svelte';
 	import Experience from '$lib/experience/experience.svelte';
+	import Education from '$lib/education/education.svelte';
 
 	import '../app.css';
 </script>
@@ -10,6 +11,7 @@
 	<Navbar />
 	<About />
 	<Experience />
+	<Education />
 </div>
 
 <svelte:head>

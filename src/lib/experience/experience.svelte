@@ -1,7 +1,7 @@
 <script>
 	import Saos from 'saos';
 
-	import Box from '$lib/experience/box.svelte';
+	import Box from '$lib/components/box.svelte';
 	import LinkedInLogo from '$lib/experience/images/linkedin.png';
 	import LibertyLogo from '$lib/experience/images/liberty_mutual.webp';
 	import LockPodLogo from '$lib/experience/images/lockpod.jpeg';
@@ -75,7 +75,7 @@
 				{
 					position: 'Undergraduate Researcher',
 					timeInPosition: 'September 2022 - September 2023',
-					company: 'Triton Software Engineering',
+					company: 'UC San Diego (Early Research Scholars Program)',
 					skills: ['Kotlin', 'Android Development'],
 					description:
 						'Developed an Android app using the BirdNet TFLite Model in Kotlin to repurpose old smartphones as carbon-efficient sensors for classifying birds from recorded audio samples.'
@@ -104,6 +104,7 @@
 						description={item.description}
 						image={item.image}
 						imageAlt={item.imageAlt}
+						width={'40%'}
 					/>
 				{/each}
 			</div>

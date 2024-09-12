@@ -1,5 +1,5 @@
 <script>
-	import Badge from './badge.svelte';
+	import Badge from '../experience/badge.svelte';
 	export let position;
 	export let company;
 	export let time;
@@ -7,23 +7,32 @@
 	export let description;
 	export let image;
 	export let imageAlt;
+	export let width = '40%';
 </script>
 
-<div class="box">
+<div class="box" style="width: {width};">
 	<div class="gen-info">
 		<div>
-			<h2>{position}</h2>
-			<p><strong>{company}</strong></p>
-			<p>{time}</p>
+			{#if position}
+				<h2>{position}</h2>
+			{/if}
+			{#if company}
+				<p><strong>{company}</strong></p>
+			{/if}
+			{#if time}
+				<p>{time}</p>
+			{/if}
 		</div>
 		{#if image && imageAlt}
 			<img src={image} alt={imageAlt} />
 		{/if}
 	</div>
 	<div class="skills-container">
-		{#each skills as skill}
-			<Badge description={skill} />
-		{/each}
+		{#if skills}
+			{#each skills as skill}
+				<Badge description={skill} />
+			{/each}
+		{/if}
 	</div>
 	{#if description}
 		<p>{description}</p>
@@ -37,7 +46,6 @@
 		margin: 1rem;
 		background-color: #f9f9f9;
 		box-shadow: 10px 15px #609966;
-		width: 40%;
 	}
 	.skills-container {
 		display: flex;
