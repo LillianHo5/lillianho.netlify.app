@@ -1,6 +1,6 @@
 <script>
 	import Box from '$lib/experience/box.svelte';
-	import LinkedInLogo from '$lib/experience/images/LI.png';
+	import LinkedInLogo from '$lib/experience/images/linkedin.png';
 	import LibertyLogo from '$lib/experience/images/liberty_mutual.webp';
 	import LockPodLogo from '$lib/experience/images/lockpod.jpeg';
 	import TSELogo from '$lib/experience/images/tse.png';
