@@ -8,11 +8,11 @@
 		<img class="img" src={headshot} alt="Lillian Ho Headshot" />
 		<p>
 			I'm an incoming 4th year at UC San Diego majoring in computer science and cognitive science. I
-			enjoy building impactful software and am always looking to exploring new technologies. In my
-			free time, I enjoy collecting Smiskis, knitting, and going on long walks.
+			enjoy building impactful software and learning new technologies. In my free time, I enjoy
+			collecting Smiskis, knitting, and going on long walks.
 			<br />
-			<br /> I'm actively looking for new grad software engineering roles and off-season internships.
-			Feel free to reach out via email or LinkedIn!
+			<br /> I'm actively looking for new grad software engineering roles and off-season internships,
+			and I'm always looking to take on new challenges. Feel free to reach out via email or LinkedIn!
 		</p>
 	</div>
 </div>

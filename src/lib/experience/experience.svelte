@@ -108,7 +108,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		margin-top: 5rem;
+		margin: 5em 0em;
 	}
 
 	.experience-container {

@@ -32,11 +32,11 @@
 
 <style>
 	.box {
-		border: 1px solid #ccc;
 		padding: 1rem;
 		border-radius: 8px;
 		margin: 1rem;
 		background-color: #f9f9f9;
+		box-shadow: 10px 15px #609966;
 		width: 40%;
 	}
 	.skills-container {
