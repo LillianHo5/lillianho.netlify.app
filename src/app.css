@@ -1,0 +1,64 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: #edf1d6;
+	scroll-behavior: smooth;
+}
+
+/* Fonts and sizing */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: 'Poppins', sans-serif !important;
+	line-height: 150%;
+	color: #609966;
+}
+
+html * {
+	font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 18px;
+}
+
+h1.display {
+	font-size: 120px;
+}
+h2.display {
+	font-size: 96px;
+}
+h3.display {
+	font-size: 80px;
+}
+h4.display {
+	font-size: 64px;
+}
+
+p,
+span {
+	font-size: 18px;
+	line-height: 150%;
+}
+
+p.caption,
+span.caption {
+	font-size: 12px;
+}
