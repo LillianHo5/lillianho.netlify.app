@@ -1,14 +1,31 @@
 <script>
+	import { onMount } from 'svelte';
+	import Saos from 'saos';
+
 	import Navbar from '$lib/navbar/navbar.svelte';
 	import About from '$lib/about/about.svelte';
 	import Experience from '$lib/experience/experience.svelte';
 
 	import '../app.css';
+
+	let ready = false;
+	onMount(() => (ready = true));
 </script>
 
-<Navbar />
-<About />
-<Experience />
+<div>
+	<Navbar />
+	{#if ready}
+		<Saos
+			animation={'fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
+			animation_out={'slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
+			top={250}
+			bottom={250}
+		>
+			<About />
+			<Experience />
+		</Saos>
+	{/if}
+</div>
 
 <svelte:head>
 	<title>Lillian Ho</title>
@@ -35,5 +52,25 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url(/fonts/Roboto-Medium.ttf);
+	}
+
+	@keyframes -global-fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes -global-slide-out-fwd-center {
+		0% {
+			transform: translateZ(1);
+			opacity: 1;
+		}
+		100% {
+			transform: translateZ(600px);
+			opacity: 0;
+		}
 	}
 </style>
