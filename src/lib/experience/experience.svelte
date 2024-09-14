@@ -20,7 +20,8 @@
 					description:
 						'Developed erasure coding for LinkedIn’s storage, reducing overhead by 75% and authored a design document to guide implementation.',
 					image: LinkedInLogo,
-					imageAlt: 'LinkedIn Logo'
+					imageAlt: 'LinkedIn Logo',
+					links: []
 				},
 				{
 					position: 'Software Engineer Intern',
@@ -40,7 +41,8 @@
 					description:
 						'Implemented and designed user interfaces for the LockPod app using TypeScript and Figma.',
 					image: LockPodLogo,
-					imageAlt: 'Liberty Mutual Insurance Logo'
+					imageAlt: 'LockPod Insurance Logo'
+					// links: [{ label: 'LockPod Website', url: 'https://www.lockpod.us/' }]
 				},
 				{
 					position: 'Software Engineer Intern',
@@ -69,9 +71,29 @@
 						'MongoDB'
 					],
 					description:
-						'Developed an interactive landing page and a mobile/web portal, improving user engagement and accessibility for FixNation and UCSD’s Division of Sports Medicine.',
+						'Created an <a href="https://landing.fixnation.org/" target="_blank" rel="noopener noreferrer">interactive landing page</a> for FixNation, attracting 1,200+ visitors, and developed a real-time medical assistance <a href="https://github.com/TritonSE/DFM-Sideline-Sidekick-App" target="_blank" rel="noopener noreferrer">portal and mobile application</a> for UCSD’s Division of Sports Medicine using MongoDB, React Native, and TypeScript.',
 					image: TSELogo,
 					imageAlt: 'Triton Software Engineering Logo'
+					// links: [
+					// 	{ label: 'FixNation Landing Page', url: 'https://landing.fixnation.org/' },
+					// 	{
+					// 		label: 'FixNation Landing Page GitHub Repo',
+					// 		url: 'https://github.com/TritonSE/FIX-Landing-Page'
+					// 	},
+					// 	{
+					// 		label: 'DFM Sideline Sidekick GitHub Repo',
+					// 		url: 'https://github.com/TritonSE/DFM-Sideline-Sidekick-App'
+					// 	}
+					// ]
+				},
+				{
+					position: 'Webmaster',
+					timeInPosition: 'September 2023 - June 2024',
+					company: 'Triton NeuroTech',
+					skills: ['React.js', 'JavaScript', 'Figma'],
+					description:
+						'Managed and maintained <a href="https://neurotechx.ucsd.edu/" target="_blank" rel="noopener noreferrer">Triton NeuroTech’s website</a> using React.js, regularly updating content for events and ongoing projects, and revamped the site with a responsive design.'
+					// links: [{ label: 'Triton NeuroTech Website', url: 'https://neurotechx.ucsd.edu/' }]
 				},
 				{
 					position: 'Undergraduate Researcher',
@@ -79,7 +101,7 @@
 					company: 'UC San Diego (Early Research Scholars Program)',
 					skills: ['Kotlin', 'Android Development'],
 					description:
-						'Developed an Android app using the BirdNet TFLite Model in Kotlin to repurpose old smartphones as carbon-efficient sensors for classifying birds from recorded audio samples.'
+						'Developed an <a href="https://github.com/The-Renee-Project/AudioBird2" target="_blank" rel="noopener noreferrer">Android app</a> using the BirdNet TFLite Model in Kotlin to repurpose old smartphones as carbon-efficient sensors for classifying birds from recorded audio samples.'
 				}
 			]
 		}
@@ -115,6 +137,7 @@
 						description={item.description}
 						image={item.image}
 						imageAlt={item.imageAlt}
+						links={item.links}
 						width={isMobile ? '80%' : '40%'}
 					/>
 				{/each}

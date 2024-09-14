@@ -37,6 +37,7 @@
 						description={item.description}
 						image={null}
 						imageAlt={null}
+						links={null}
 						width="90%"
 					/>
 				{/each}
@@ -52,7 +53,7 @@
 
 	.education-container {
 		display: flex;
-		flex-direction: column; /* Changed to column for single item layout */
+		flex-direction: column;
 		align-items: center;
 	}
 

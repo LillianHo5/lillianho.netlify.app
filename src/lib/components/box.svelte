@@ -1,5 +1,6 @@
 <script>
-	import Badge from '../experience/badge.svelte';
+	import Badge from '$lib/experience/badge.svelte';
+
 	export let position;
 	export let company;
 	export let time;
@@ -8,6 +9,7 @@
 	export let image;
 	export let imageAlt;
 	export let width = '40%';
+	export let links;
 </script>
 
 <div class="box" style="width: {width};">
@@ -35,7 +37,25 @@
 		{/if}
 	</div>
 	{#if description}
-		<p>{description}</p>
+		{#if Array.isArray(description) && description.length > 1}
+			<ul class="description">
+				{#each description as desc}
+					<li>{@html desc}</li>
+				{/each}
+			</ul>
+		{:else}
+			<p class="description">{@html description}</p>
+		{/if}
+	{/if}
+	{#if links}
+		<p><strong>Links:</strong></p>
+		<div class="links">
+			<ul>
+				{#each links as { label, url }}
+					<li><a href={url} target="_blank" rel="noopener noreferrer">{label}</a></li>
+				{/each}
+			</ul>
+		</div>
 	{/if}
 </div>
 
@@ -61,13 +81,34 @@
 		margin: 0;
 		font-size: 1.25rem;
 	}
-	p {
+	p,
+	ul {
 		margin: 0.5rem 0;
 	}
 	img {
 		width: 5em;
 		height: 5em;
 		border-radius: 10px;
+	}
+	.links {
+		margin-top: 1rem;
+	}
+	.links a {
+		margin-right: 0.5rem;
+		color: #609966;
+		text-decoration: none;
+	}
+	.links a:hover {
+		text-decoration: underline;
+		color: #99a555;
+	}
+	ul.description {
+		padding-left: 1em;
+	}
+	ul.description li {
+		margin-bottom: 0.5rem;
+		color: #609966;
+		font-size: 18px;
 	}
 
 	@media only screen and (max-width: 1000px) {
@@ -79,7 +120,8 @@
 			font-size: 20px;
 		}
 
-		p {
+		p,
+		ul.description li {
 			font-size: 16px;
 		}
 	}
