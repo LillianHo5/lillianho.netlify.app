@@ -5,12 +5,13 @@
 
 	let isMobile = false;
 
-	onMount(() => {
-		const checkScreenWidth = () => {
-			isMobile = window.innerWidth <= 1000;
-		};
+	const checkScreenWidth = () => {
+		isMobile = window.innerWidth <= 1000;
+	};
 
+	onMount(() => {
 		checkScreenWidth();
+		window.addEventListener('resize', checkScreenWidth);
 	});
 </script>
 
@@ -29,7 +30,9 @@
 	{/if}
 	<div class="about-contents">
 		<Saos
-			animation={isMobile ? '' : 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
+			animation={isMobile
+				? 'fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'
+				: 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
 			top={250}
 			bottom={250}
 			once={true}
