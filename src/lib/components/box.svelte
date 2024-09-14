@@ -47,7 +47,7 @@
 			<p class="description">{@html description}</p>
 		{/if}
 	{/if}
-	{#if links}
+	{#if links && links.length > 0}
 		<p><strong>Links:</strong></p>
 		<div class="links">
 			<ul>
