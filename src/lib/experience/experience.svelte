@@ -18,7 +18,7 @@
 					company: 'LinkedIn',
 					skills: ['Java', 'Software Design', 'Distributed Systems', 'JUnit', 'Mockito', 'Docker'],
 					description:
-						'Developed erasure coding for LinkedIn’s storage, reducing overhead by 75% and authored a design document to guide implementation.',
+						'Implemented erasure coding for LinkedIn’s next-gen storage system, reducing storage overhead by 75% compared to traditional replication methods while ensuring data durability.',
 					image: LinkedInLogo,
 					imageAlt: 'LinkedIn Logo',
 					links: []
@@ -29,7 +29,7 @@
 					company: 'Liberty Mutual Insurance',
 					skills: ['SQL', 'Python', 'React.js', 'TypeScript', 'DBVisualizer', 'AWS'],
 					description:
-						' Improved data integrity and user access by modifying reinsurance claims databases and optimizing UI readability with React.',
+						'Updated a reinsurance claims database by modifying 30% of the data, improving integrity and accessibility using SQL, AWS Glue, and Power BI. Improved data readability on the reinsurance application portal by updating currency formats with HTML, CSS, TypeScript, and React.',
 					image: LibertyLogo,
 					imageAlt: 'Liberty Mutual Insurance Logo'
 				},
@@ -39,7 +39,7 @@
 					company: 'LockPod',
 					skills: ['React Native', 'TypeScript', 'Figma'],
 					description:
-						'Implemented and designed user interfaces for the LockPod app using TypeScript and Figma.',
+						'Implemented and designed user interfaces for the LockPod mobile app using TypeScript and Figma.',
 					image: LockPodLogo,
 					imageAlt: 'LockPod Insurance Logo'
 					// links: [{ label: 'LockPod Website', url: 'https://www.lockpod.us/' }]
@@ -71,7 +71,7 @@
 						'MongoDB'
 					],
 					description:
-						'Created an <a href="https://landing.fixnation.org/" target="_blank" rel="noopener noreferrer">interactive landing page</a> for FixNation, attracting 1,200+ visitors, and developed a real-time medical assistance <a href="https://github.com/TritonSE/DFM-Sideline-Sidekick-App" target="_blank" rel="noopener noreferrer">portal and mobile application</a> for UCSD’s Division of Sports Medicine using MongoDB, React Native, and TypeScript.',
+						'Collaborated with 13 students to create an <a href="https://landing.fixnation.org/" target="_blank" rel="noopener noreferrer">interactive landing page</a> for FixNation, attracting 1,200+ visitors, and contributed to building a real-time medical assistance <a href="https://github.com/TritonSE/DFM-Sideline-Sidekick-App" target="_blank" rel="noopener noreferrer">portal and mobile application</a> for UCSD’s Division of Sports Medicine using MongoDB, React Native, and TypeScript.',
 					image: TSELogo,
 					imageAlt: 'Triton Software Engineering Logo'
 					// links: [
@@ -101,7 +101,7 @@
 					company: 'UC San Diego (Early Research Scholars Program)',
 					skills: ['Kotlin', 'Android Development'],
 					description:
-						'Developed an <a href="https://github.com/The-Renee-Project/AudioBird2" target="_blank" rel="noopener noreferrer">Android app</a> using the BirdNet TFLite Model in Kotlin to repurpose old smartphones as carbon-efficient sensors for classifying birds from recorded audio samples.'
+						'Developed an <a href="https://github.com/The-Renee-Project/AudioBird2" target="_blank" rel="noopener noreferrer">Android app</a> with 2 students using the BirdNet TFLite Model in Kotlin to repurpose old smartphones as carbon-efficient sensors for classifying birds from recorded audio samples.'
 				}
 			]
 		}
