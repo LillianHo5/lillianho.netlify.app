@@ -109,12 +109,13 @@
 
 	let isMobile = false;
 
-	onMount(() => {
-		const checkScreenWidth = () => {
-			isMobile = window.innerWidth <= 1000;
-		};
+	const checkScreenWidth = () => {
+		isMobile = window.innerWidth <= 1000;
+	};
 
+	onMount(() => {
 		checkScreenWidth();
+		window.addEventListener('resize', checkScreenWidth);
 	});
 </script>
 
