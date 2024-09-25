@@ -7,6 +7,7 @@
 	import LibertyLogo from '$lib/experience/images/liberty_mutual.webp';
 	import LockPodLogo from '$lib/experience/images/lockpod.jpeg';
 	import TSELogo from '$lib/experience/images/tse.png';
+	import TNTLogo from '$lib/experience/images/tnt_logo.svg';
 
 	const experiences = [
 		{
@@ -92,8 +93,10 @@
 					company: 'Triton NeuroTech',
 					skills: ['React.js', 'JavaScript', 'Figma'],
 					description:
-						'Managed and maintained <a href="https://neurotechx.ucsd.edu/" target="_blank" rel="noopener noreferrer">Triton NeuroTech’s website</a> using React.js, regularly updating content for events and ongoing projects, and revamped the site with a responsive design.'
+						'Managed and maintained <a href="https://neurotechx.ucsd.edu/" target="_blank" rel="noopener noreferrer">Triton NeuroTech’s website</a> using React.js, regularly updating content for events and ongoing projects, and revamped the site with a responsive design.',
 					// links: [{ label: 'Triton NeuroTech Website', url: 'https://neurotechx.ucsd.edu/' }]
+					image: TNTLogo,
+					imageAlt: 'Triton NeuroTech Logo'
 				},
 				{
 					position: 'Undergraduate Researcher',

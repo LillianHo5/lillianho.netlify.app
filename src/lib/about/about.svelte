@@ -48,7 +48,11 @@
 			<p>
 				I'm an incoming 4th year at UC San Diego majoring in computer science and cognitive science.
 				I enjoy building impactful software and learning new technologies. In my free time, I enjoy
-				collecting Smiskis, knitting, and going on long walks.
+				collecting <a
+					href="https://drive.google.com/file/d/1-Gd3B56djEqnLeEfg0hfezUSlxztz-ak/view?usp=sharing"
+					target="_blank"
+					rel="noopener noreferrer">Smiskis</a
+				>, knitting, and going on long walks.
 				<br />
 				<br /> I'm actively looking for new grad software engineering roles and off-season internships,
 				and I'm always looking to take on new challenges. Feel free to reach out via email or LinkedIn!
