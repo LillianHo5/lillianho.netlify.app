@@ -9,6 +9,10 @@
 	function toggleMenu() {
 		menuOpen = !menuOpen;
 	}
+
+	function closeMenu() {
+		menuOpen = false;
+	}
 </script>
 
 <div class="desktop-navbar">
@@ -18,7 +22,7 @@
 		<a href="#experience"><p>Experience</p></a>
 		<a href="#education"><p>Education</p></a>
 		<a
-			href="https://drive.google.com/file/d/1Oc2tLSkskX7b2g4yVCUOYE4DxeoSET-t/view?usp=sharing"
+			href="https://drive.google.com/file/d/1wylxtFSm5GFTctFuN9c0RS3TPVtdrrUK/view?usp=sharing"
 			target="_blank"><p>Resume</p></a
 		>
 		<a href="mailto:holillian8@gmail.com"><Mail fill="#EDF1D6" /></a>
@@ -36,19 +40,28 @@
 	</div>
 	{#if menuOpen}
 		<ul class="mobile-menu">
-			<li><a href="/"><p>Home</p></a></li>
-			<li><a href="#about"><p>About</p></a></li>
-			<li><a href="#experience"><p>Experience</p></a></li>
-			<li><a href="#education"><p>Education</p></a></li>
+			<li><a href="/" on:click={closeMenu}><p>Home</p></a></li>
+			<li><a href="#about" on:click={closeMenu}><p>About</p></a></li>
+			<li><a href="#experience" on:click={closeMenu}><p>Experience</p></a></li>
+			<li><a href="#education" on:click={closeMenu}><p>Education</p></a></li>
 			<li>
 				<a
 					href="https://drive.google.com/file/d/1Oc2tLSkskX7b2g4yVCUOYE4DxeoSET-t/view?usp=sharing"
-					target="_blank"><p>Resume</p></a
+					target="_blank"
+					on:click={closeMenu}><p>Resume</p></a
 				>
 			</li>
-			<li><a href="mailto:holillian8@gmail.com"><p>Contact</p></a></li>
-			<li><a href="https://www.linkedin.com/in/lillianmho/" target="_blank"><p>LinkedIn</p></a></li>
-			<li><a href="https://github.com/lillianho5" target="_blank"><p>GitHub</p></a></li>
+			<li><a href="mailto:holillian8@gmail.com" on:click={closeMenu}><p>Contact</p></a></li>
+			<li>
+				<a href="https://www.linkedin.com/in/lillianmho/" target="_blank" on:click={closeMenu}
+					><p>LinkedIn</p></a
+				>
+			</li>
+			<li>
+				<a href="https://github.com/lillianho5" target="_blank" on:click={closeMenu}
+					><p>GitHub</p></a
+				>
+			</li>
 		</ul>
 	{/if}
 </div>

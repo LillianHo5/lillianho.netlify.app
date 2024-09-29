@@ -8,11 +8,23 @@
 	import LockPodLogo from '$lib/experience/images/lockpod.jpeg';
 	import TSELogo from '$lib/experience/images/tse.png';
 	import TNTLogo from '$lib/experience/images/tnt_logo.svg';
+	import CAIDALogo from '$lib/experience/images/CAIDA.png';
 
 	const experiences = [
 		{
 			category: 'Work Experience',
 			data: [
+				{
+					position: 'Frontend Developer REU (Research Experience for Undergraduates)',
+					timeInPosition: 'September 2024 - Present',
+					company: 'Center for Applied Internet Data Analysis',
+					skills: ['React.js', 'JavaScript', 'GitLab'],
+					description:
+						'Collaborating with UX designers and researchers to develop responsive web interfaces for CAIDA’s platform.',
+					image: CAIDALogo,
+					imageAlt: 'CAIDA Logo',
+					links: []
+				},
 				{
 					position: 'Software Engineer Intern',
 					timeInPosition: 'June 2024 - September 2024',
