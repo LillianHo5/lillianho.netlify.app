@@ -46,7 +46,7 @@
 			<li><a href="#education" on:click={closeMenu}><p>Education</p></a></li>
 			<li>
 				<a
-					href="https://drive.google.com/file/d/1Oc2tLSkskX7b2g4yVCUOYE4DxeoSET-t/view?usp=sharing"
+					href="https://drive.google.com/file/d/1wylxtFSm5GFTctFuN9c0RS3TPVtdrrUK/view?usp=sharing"
 					target="_blank"
 					on:click={closeMenu}><p>Resume</p></a
 				>
