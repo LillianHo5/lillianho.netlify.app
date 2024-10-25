@@ -46,8 +46,8 @@
 			once={true}
 		>
 			<p>
-				I'm an incoming 4th year at UC San Diego majoring in computer science and cognitive science.
-				I enjoy building impactful software and learning new technologies. In my free time, I enjoy
+				I'm a 4th year at UC San Diego majoring in computer science and cognitive science. I enjoy
+				building impactful software and learning new technologies. In my free time, I enjoy
 				collecting <a
 					href="https://drive.google.com/file/d/1-Gd3B56djEqnLeEfg0hfezUSlxztz-ak/view?usp=sharing"
 					target="_blank"
