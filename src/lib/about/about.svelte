@@ -54,8 +54,7 @@
 					rel="noopener noreferrer">Smiskis</a
 				>, knitting, and going on long walks.
 				<br />
-				<br /> I'm actively looking for new grad software engineering roles and off-season internships,
-				and I'm always looking to take on new challenges. Feel free to reach out via email or LinkedIn!
+				<br />
 			</p>
 		</Saos>
 	</div>
