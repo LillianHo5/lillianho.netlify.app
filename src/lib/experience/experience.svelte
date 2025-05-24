@@ -16,11 +16,11 @@
 			data: [
 				{
 					position: 'Frontend Developer REU (Research Experience for Undergraduates)',
-					timeInPosition: 'September 2024 - Present',
+					timeInPosition: 'September 2024 - December 2024',
 					company: 'Center for Applied Internet Data Analysis',
 					skills: ['React.js', 'JavaScript', 'GitLab'],
 					description:
-						'Collaborating with UX designers and researchers to develop responsive web interfaces for CAIDA’s platform.',
+						'Collaborated with UX designers and researchers to develop responsive web interfaces for <a href="https://catalog.caida.org/software/bgp2go" target="_blank" rel="noopener noreferrer">CAIDA\'s BGP2GO Project</a>.',
 					image: CAIDALogo,
 					imageAlt: 'CAIDA Logo',
 					links: []
