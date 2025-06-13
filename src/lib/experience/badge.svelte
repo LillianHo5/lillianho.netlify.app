@@ -13,10 +13,10 @@
 		width: max-content;
 		margin-right: 0.5rem;
 		margin-top: 0.5rem;
-		padding: 0rem 0.5rem;
+		padding: 0 0.5rem;
 	}
 	p {
-		line-height: 0%;
+		line-height: 0;
 		font-size: 16px;
 		color: #686d76;
 	}

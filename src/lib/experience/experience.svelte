@@ -20,7 +20,7 @@
 					company: 'Center for Applied Internet Data Analysis',
 					skills: ['React.js', 'JavaScript', 'GitLab'],
 					description:
-						'Collaborated with UX designers and researchers to develop responsive web interfaces for <a href="https://catalog.caida.org/software/bgp2go" target="_blank" rel="noopener noreferrer">CAIDA\'s BGP2GO Project</a>.',
+						'Collaborated with UX designers and researchers to develop responsive web interfaces for CAIDA\'s BGP2GO Project.',
 					image: CAIDALogo,
 					imageAlt: 'CAIDA Logo',
 					links: []
@@ -84,20 +84,20 @@
 						'MongoDB'
 					],
 					description:
-						'Collaborated with 13 students to create an <a href="https://landing.fixnation.org/" target="_blank" rel="noopener noreferrer">interactive landing page</a> for FixNation, attracting 1,200+ visitors, and contributed to building a real-time medical assistance <a href="https://github.com/TritonSE/DFM-Sideline-Sidekick-App" target="_blank" rel="noopener noreferrer">portal and mobile application</a> for UCSD’s Division of Sports Medicine using MongoDB, React Native, and TypeScript.',
+						'Collaborated with 13 students to create an interactive landing page for FixNation, attracting 1,200+ visitors, and contributed to building a real-time medical assistance portal and mobile application for UCSD’s Division of Sports Medicine using MongoDB, React Native, and TypeScript.',
 					image: TSELogo,
-					imageAlt: 'Triton Software Engineering Logo'
-					// links: [
-					// 	{ label: 'FixNation Landing Page', url: 'https://landing.fixnation.org/' },
-					// 	{
-					// 		label: 'FixNation Landing Page GitHub Repo',
-					// 		url: 'https://github.com/TritonSE/FIX-Landing-Page'
-					// 	},
-					// 	{
-					// 		label: 'DFM Sideline Sidekick GitHub Repo',
-					// 		url: 'https://github.com/TritonSE/DFM-Sideline-Sidekick-App'
-					// 	}
-					// ]
+					imageAlt: 'Triton Software Engineering Logo',
+					links: [
+						{ label: 'FixNation Landing Page', url: 'https://landing.fixnation.org/' },
+						{
+							label: 'FixNation Landing Page GitHub Repo',
+							url: 'https://github.com/TritonSE/FIX-Landing-Page'
+						},
+						{
+							label: 'DFM Sideline Sidekick GitHub Repo',
+							url: 'https://github.com/TritonSE/DFM-Sideline-Sidekick-App'
+						}
+					]
 				},
 				{
 					position: 'Webmaster',
@@ -105,7 +105,7 @@
 					company: 'Triton NeuroTech',
 					skills: ['React.js', 'JavaScript', 'Figma'],
 					description:
-						'Managed and maintained <a href="https://neurotechx.ucsd.edu/" target="_blank" rel="noopener noreferrer">Triton NeuroTech’s website</a> using React.js, regularly updating content for events and ongoing projects, and revamped the site with a responsive design.',
+						'Managed and maintained Triton NeuroTech’s website using React.js, regularly updating content for events and ongoing projects, and revamped the site with a responsive design.',
 					// links: [{ label: 'Triton NeuroTech Website', url: 'https://neurotechx.ucsd.edu/' }]
 					image: TNTLogo,
 					imageAlt: 'Triton NeuroTech Logo'
@@ -116,7 +116,11 @@
 					company: 'UC San Diego (Early Research Scholars Program)',
 					skills: ['Kotlin', 'Android Development'],
 					description:
-						'Developed an <a href="https://github.com/The-Renee-Project/AudioBird2" target="_blank" rel="noopener noreferrer">Android app</a> with 2 students using the BirdNet TFLite Model in Kotlin to repurpose old smartphones as carbon-efficient sensors for classifying birds from recorded audio samples.'
+						'Developed an Android app with 2 students using the BirdNet TFLite Model in Kotlin to repurpose old smartphones as carbon-efficient sensors for classifying birds from recorded audio samples.',
+					links: [
+						{label: 'AudioBird2 GitHub Repo', url: 'https://github.com/The-Renee-Project/AudioBird2'}
+					]
+
 				}
 			]
 		}
@@ -150,6 +154,7 @@
 						time={item.timeInPosition}
 						company={item.company}
 						skills={item.skills}
+						descriptionTitle={null}
 						description={item.description}
 						image={item.image}
 						imageAlt={item.imageAlt}
