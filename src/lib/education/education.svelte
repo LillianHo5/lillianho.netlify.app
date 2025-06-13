@@ -10,8 +10,9 @@
 					position: 'University of California, San Diego',
 					timeInPosition: 'September 2021 - December 2024',
 					company: 'B.S. Computer Science, Minor in Cognitive Science',
+					descriptionTitle: 'Activities and societies',
 					description:
-						'At UC San Diego, I am currently involved in Women in Computing @ UCSD, Society of Women Engineers, Early Research Scholars Program, Triton NeuroTech, and Triton Software Engineering.'
+						'Women in Computing @ UCSD, Society of Women Engineers, Early Research Scholars Program, Triton NeuroTech, Triton Software Engineering'
 				}
 			]
 		}
@@ -34,6 +35,7 @@
 						time={item.timeInPosition}
 						company={item.company}
 						skills={null}
+						descriptionTitle={item.descriptionTitle}
 						description={item.description}
 						image={null}
 						imageAlt={null}

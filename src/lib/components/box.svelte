@@ -5,6 +5,7 @@
 	export let company;
 	export let time;
 	export let skills;
+	export let descriptionTitle;
 	export let description;
 	export let image;
 	export let imageAlt;
@@ -36,15 +37,18 @@
 			{/each}
 		{/if}
 	</div>
+	{#if descriptionTitle}
+		<p><strong>{descriptionTitle}</strong>: </p>
+	{/if}
 	{#if description}
 		{#if Array.isArray(description) && description.length > 1}
 			<ul class="description">
 				{#each description as desc}
-					<li>{@html desc}</li>
+					<li>{desc}</li>
 				{/each}
 			</ul>
 		{:else}
-			<p class="description">{@html description}</p>
+			<p class="description">{description}</p>
 		{/if}
 	{/if}
 	{#if links && links.length > 0}
@@ -90,9 +94,6 @@
 		height: 5em;
 		border-radius: 10px;
 	}
-	.links {
-		margin-top: 1rem;
-	}
 	.links a {
 		margin-right: 0.5rem;
 		color: #609966;
@@ -104,6 +105,7 @@
 	}
 	ul.description {
 		padding-left: 1em;
+		color: #609966;
 	}
 	ul.description li {
 		margin-bottom: 0.5rem;
