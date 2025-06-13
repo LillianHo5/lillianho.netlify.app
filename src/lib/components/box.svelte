@@ -56,7 +56,9 @@
 		<div class="links">
 			<ul>
 				{#each links as { label, url }}
-					<li><a href={url} target="_blank" rel="noopener noreferrer">{label}</a></li>
+					<li>
+						<a href={url} target="_blank" rel="noopener noreferrer">{label}</a>
+					</li>
 				{/each}
 			</ul>
 		</div>
@@ -107,12 +109,13 @@
 		padding-left: 1em;
 		color: #609966;
 	}
-	ul.description li {
+  ul.description li {
 		margin-bottom: 0.5rem;
-		color: #609966;
 		font-size: 18px;
-	}
-
+  }
+  .links ul li::marker {
+      color: #609966;
+  }
 	@media only screen and (max-width: 1000px) {
 		.box {
 			width: 80%;

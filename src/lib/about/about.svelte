@@ -16,18 +16,16 @@
 </script>
 
 <div id="about">
-	{#if isMobile}
+	<Saos
+		animation={isMobile
+    ? 'fade-in 0.5s ease-in-out both'
+    : 'fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
+		top={50}
+		bottom={50}
+		once={true}
+	>
 		<h1>Lillian Ho</h1>
-	{:else}
-		<Saos
-			animation={'fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
-			top={250}
-			bottom={250}
-			once={true}
-		>
-			<h1>Lillian Ho</h1>
-		</Saos>
-	{/if}
+	</Saos>
 	<div class="about-contents">
 		<Saos
 			animation={isMobile
