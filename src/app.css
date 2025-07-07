@@ -3,7 +3,9 @@
 	--secondary-color: #609966;
 	--accent-color: #e74c3c;
 	--text-color: #609966;
+	--text-color-dark: #99a555;
 	--background-color: #ecf0f1;
+	--light-color: #f9f9f9;
 }
 
 html,

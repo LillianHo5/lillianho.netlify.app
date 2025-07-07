@@ -70,7 +70,7 @@
 		padding: 1rem;
 		border-radius: 8px;
 		margin: 1rem;
-		background-color: #f9f9f9;
+		background-color: var(--light-color);
 		box-shadow: 10px 15px var(--text-color);
 	}
 	.skills-container {
@@ -103,7 +103,7 @@
 	}
 	.links a:hover {
 		text-decoration: underline;
-		color: #99a555;
+		color: var(text-color-dark);
 	}
 	ul.description {
 		padding-left: 1em;
