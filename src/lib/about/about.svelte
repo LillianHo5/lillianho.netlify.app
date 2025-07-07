@@ -16,16 +16,16 @@
 </script>
 
 <div id="about">
-	<Saos
-		animation={isMobile
-    ? 'fade-in 0.5s ease-in-out both'
-    : 'fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
-		top={50}
-		bottom={50}
-		once={true}
-	>
-		<h1>Lillian Ho</h1>
-	</Saos>
+<!--	<Saos-->
+<!--		animation={isMobile-->
+<!--    ? 'fade-in 0.5s ease-in-out both'-->
+<!--    : 'fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}-->
+<!--		top={50}-->
+<!--		bottom={50}-->
+<!--		once={true}-->
+<!--	>-->
+<!--		<h1>Lillian Ho</h1>-->
+<!--	</Saos>-->
 	<div class="about-contents">
 		<Saos
 			animation={isMobile
@@ -43,6 +43,7 @@
 			bottom={250}
 			once={true}
 		>
+			<h1>Lillian Ho</h1>
 			<p>
 				I'm a 4th year at UC San Diego majoring in computer science and cognitive science. I enjoy
 				building impactful software and learning new technologies. In my free time, I enjoy
@@ -60,10 +61,11 @@
 
 <style>
 	#about {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin-top: 5em;
 	}
 
 	.about-contents {
@@ -74,13 +76,13 @@
 	}
 
 	h1 {
-		font-size: 5vw;
+		font-size: 4vw;
 	}
 
 	img {
 		object-fit: cover;
-		width: 23vw;
-		height: 23vw;
+		width: 20vw;
+		height: 20vw;
 		border-radius: 100%;
 		padding-right: 10em;
 	}
@@ -91,7 +93,7 @@
 
 	@media only screen and (max-width: 1000px) {
 		#about {
-			padding: 0em;
+			padding: 0;
 		}
 
 		.about-contents {

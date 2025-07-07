@@ -1,3 +1,11 @@
+:root {
+	--primary-color: #EDF1D6;
+	--secondary-color: #609966;
+	--accent-color: #e74c3c;
+	--text-color: #609966;
+	--background-color: #ecf0f1;
+}
+
 html,
 body {
 	margin: 0;
@@ -16,7 +24,7 @@ h6,
 p {
 	font-family: 'Poppins', sans-serif !important;
 	line-height: 150%;
-	color: #609966;
+	color: var(--text-color);
 }
 
 html * {

@@ -71,7 +71,7 @@
 		border-radius: 8px;
 		margin: 1rem;
 		background-color: #f9f9f9;
-		box-shadow: 10px 15px #609966;
+		box-shadow: 10px 15px var(--text-color);
 	}
 	.skills-container {
 		display: flex;
@@ -98,7 +98,7 @@
 	}
 	.links a {
 		margin-right: 0.5rem;
-		color: #609966;
+		color: var(--text-color);
 		text-decoration: none;
 	}
 	.links a:hover {
@@ -107,14 +107,14 @@
 	}
 	ul.description {
 		padding-left: 1em;
-		color: #609966;
+		color: var(--text-color);
 	}
   ul.description li {
 		margin-bottom: 0.5rem;
 		font-size: 18px;
   }
   .links ul li::marker {
-      color: #609966;
+      color: var(--text-color);
   }
 	@media only screen and (max-width: 1000px) {
 		.box {
