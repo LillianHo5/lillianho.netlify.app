@@ -44,7 +44,7 @@
 			once={true}
 		>
 			<h1>Lillian Ho</h1>
-			<p>
+			<p id="about-paragraph">
 				I'm a 4th year at UC San Diego majoring in computer science and cognitive science. I enjoy
 				building impactful software and learning new technologies. In my free time, I enjoy
 				collecting <a
@@ -92,27 +92,34 @@
 	}
 
 	@media only screen and (max-width: 1000px) {
-		#about {
-			padding: 0;
-		}
+			#about {
+					padding: 0;
+			}
 
-		.about-contents {
-			flex-direction: column;
-		}
+      #about-paragraph {
+          width: 80%;
+          text-align: center;
+          margin: 0 auto;
+      }
 
-		h1 {
-			font-size: 10vw;
-		}
+			.about-contents {
+          flex-direction: column;
+			}
 
-		img {
-			width: 40vw;
-			height: 40vw;
-			padding-right: 0em;
-		}
+			h1 {
+					font-size: 10vw;
+          text-align: center;
+			}
 
-		p {
-			font-size: 16px;
-			width: 20em;
-		}
+			img {
+					width: 40vw;
+					height: 40vw;
+					padding-right: 0em;
+			}
+
+			p {
+				font-size: 16px;
+				width: 20em;
+			}
 	}
 </style>
